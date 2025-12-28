@@ -1,0 +1,25 @@
+# Core FastAPI Framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Settings & Validation
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# Utilities
+python-dotenv==1.0.1
+
+# مكتبة للتعامل مع رفع الملفات ومعالجة النصوص
+python-multipart==0.0.9
+
+slowapi==0.1.9
+
+# ✨ مكتبة تحديد المعدل
+slowapi==0.1.9
+
+
+azure-identity==1.15.0
+azure-keyvault-secrets==4.7.0
+opencensus-ext-azure==1.1.13 # للمراقبة
+
+streamlit

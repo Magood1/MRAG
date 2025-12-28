@@ -1,0 +1,28 @@
+# Python basics
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment (هام جداً عدم رفعه)
+venv/
+.venv/
+env/
+
+# Environment Variables (أخطر ملف - لا ترفعه أبداً)
+.env
+.env.local
+
+# IDE settings
+.idea/
+.vscode/
+
+# Testing cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Mac OS junk
+.DS_Store

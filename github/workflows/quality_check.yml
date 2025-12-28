@@ -1,0 +1,36 @@
+name: Code Quality & Security
+
+on: [push, pull_request]
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          
+      - name: Code Formatting Check (Black)
+        run: black --check .
+        
+      - name: Linter Check (Ruff)
+        run: ruff check .
+        
+      - name: Security Check (Bandit)
+        # يفحص الكود بحثًا عن ثغرات أمنية شائعة
+        run: bandit -r app
+        
+      - name: Run Tests (Pytest)
+        # يقوم بتشغيل الاختبارات الحقيقية الآن
+        run: pytest
+
+        
