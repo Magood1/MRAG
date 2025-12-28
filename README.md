@@ -4,7 +4,6 @@ MRAG: Enterprise-Grade RAG Kernel & LLM Gateway
 [![Architecture](https://img.shields.io/badge/architecture-modular-orange.svg)]()
 [![Security: Hardened](https://img.shields.io/badge/security-hardened-green.svg)]()
 [![Test Pass Rate](https://img.shields.io/badge/tests-100%25_passing-brightgreen.svg)](evaluation/PERFORMANCE_REPORT.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **A robust, observable, and modular infrastructure for building Retriever-Augmented Generation (RAG) applications with built-in cost governance and security compliance.**
 
@@ -184,4 +183,3 @@ Advanced Reranking: Integrating Cross-Encoders for higher retrieval precision.
 
 Author: Magood1
 Role: Backend & AI Engineer
-License: MIT
