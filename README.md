@@ -55,22 +55,22 @@ graph LR
     User[Client / UI] -->|HTTPS + API Key| Gateway[FastAPI Gateway];
     Gateway -->|Auth & Rate Limit| Middleware[Security Layer];
     Middleware -->|Query| Orch[RAG Orchestrator];
-#    
-#    subgraph "Ingestion Pipeline"
-#        Doc[Document] -->|Sanitize PII| Cleaner[Ingestion Service];
-#        Cleaner -->|Chunking| Chunker;
-#        Chunker -->|Index| VectorDB[(Abstract Vector Store)];
-#    end
-#
-#    subgraph "Retrieval & Gen"
-#        Orch -->|Fetch Context| VectorDB;
-#        VectorDB -->|Context Chunks| Orch;
-#        Orch -->|Guardrail Check| Policy[Policy Engine];
-#        Policy -->|Valid Context| LLM[LLM Service / Mock Adapter];
-#        LLM -->|Generate + Token Usage| Orch;
-#    end
-#    
-#    Orch -->|Response + Timings| User;
+###    
+###    subgraph "Ingestion Pipeline"
+###        Doc[Document] -->|Sanitize PII| Cleaner[Ingestion Service];
+###        Cleaner -->|Chunking| Chunker;
+###        Chunker -->|Index| VectorDB[(Abstract Vector Store)];
+###    end
+###
+###    subgraph "Retrieval & Gen"
+###        Orch -->|Fetch Context| VectorDB;
+###        VectorDB -->|Context Chunks| Orch;
+###        Orch -->|Guardrail Check| Policy[Policy Engine];
+###        Policy -->|Valid Context| LLM[LLM Service / Mock Adapter];
+###        LLM -->|Generate + Token Usage| Orch;
+###    end
+###    
+###    Orch -->|Response + Timings| User;
 Quick Start (Developer Experience)
 
 We prioritize a seamless DX. A Makefile is provided to abstract complex setup commands.
