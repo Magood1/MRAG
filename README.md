@@ -150,7 +150,7 @@ expand_less
 Used by load balancers (Azure App Service) to verify service availability.
 
 curl -X GET http://localhost:8000/health
-🧪 Development & Testing Protocol
+Development & Testing Protocol
 
 We employ a strict testing strategy covering Unit, Integration, and Security layers.
 
@@ -165,7 +165,8 @@ make test
 Security Audit: Scans code for vulnerabilities using Bandit.
 
 make security-check
-🗺️ Roadmap & Contribution
+
+Roadmap & Contribution
 
 The architecture is designed for extensibility:
 
